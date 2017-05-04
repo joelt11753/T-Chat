@@ -6,8 +6,14 @@
 
     Room.all = rooms;
 
+    Room.add = function (room) {
+      Room.$add({
+        name: room
+      });
+    };
+
     return Room;
-  }
+  } // end Room
 
   angular
     .module('tChat')

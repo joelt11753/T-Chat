@@ -15,6 +15,6 @@
   }
 
   angular
-    .module('tChat', ['ui.router', 'firebase'])
+    .module('tChat', ['ui.router', 'firebase', 'ui.bootstrap'])
     .config(config);
 })();

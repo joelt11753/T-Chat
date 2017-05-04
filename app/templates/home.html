@@ -1,0 +1,21 @@
+  <div class="container-fluid">
+    <div class="row">
+      <!--LEFT SIDEBAR-->
+      <div class="col-sm-2 sidebar">
+        <div class="row">
+          <!--TITLE BOX-->
+          <header class="col-sm-12 title">
+            <h4>T-Chat</h4>
+          </header>
+          <nav class="col-sm-12">
+            <ul ng-repeat="room in home.roomList">
+              <li>{{ room.$value }}</li>              
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <!--CHAT SECTION-->
+      <div class="col-sm-10">
+      </div>
+    </div>
+  </div>

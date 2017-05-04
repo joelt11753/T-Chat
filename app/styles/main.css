@@ -7,3 +7,11 @@ html {
   height: 100%;
   font-size: 100%;
 }
+.sidebar {
+  background-color: #2E86C1;
+  color: #FFF;
+  min-height: 100VH;
+}
+.sidebar .title {
+  padding-top: 10px;
+}

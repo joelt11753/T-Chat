@@ -1,9 +1,10 @@
-(function () {
-  function HomeCtrl () {
-    
+(function ($scope) {
+  function HomeCtrl (Room) {
+    this.roomList = Room.all;
+    console.log(Room.all);
   }
   
   angular
     .module('tChat')
-    .controller('HomeCtrl', [HomeCtrl]);
+    .controller('HomeCtrl', ['Room', HomeCtrl]);
 })();

@@ -1,13 +1,17 @@
 (function ($scope) {
-  function HomeCtrl(Room) {
+  function HomeCtrl(Room, $uibModal) {
     this.roomList = Room.all;
 
-    this.add = function (room) {
-      Room.add(room);
+    this.openModal = function () {
+      var modalInstance = $uibModal.open({
+        templateUrl: '/templates/modal.html',
+        controller: 'AddRoomCtrl',
+        controllerAs: 'roomModal'
+      });
     };
-  } // end HomeCtrl
+  }
 
   angular
     .module('tChat')
-    .controller('HomeCtrl', ['Room', HomeCtrl]);
+    .controller('HomeCtrl', ['Room', '$uibModal', HomeCtrl]);
 })();

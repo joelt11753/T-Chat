@@ -4,9 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>T-Chat</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="/styles/main.css">
 </head>
+
 <body>
   <ui-view></ui-view>
   <!--SCRIPTS-->
@@ -17,20 +18,21 @@
   <script src="https://www.gstatic.com/firebasejs/3.9.0/firebase.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.5.0/ui-bootstrap-tpls.min.js"></script>
   <script>
-  // Initialize Firebase
-  var config = {
-    apiKey: "AIzaSyBDdv2SOg3MshG0h0dMj3eo_bBRninaOdk",
-    authDomain: "t-chat-f027c.firebaseapp.com",
-    databaseURL: "https://t-chat-f027c.firebaseio.com",
-    projectId: "t-chat-f027c",
-    storageBucket: "t-chat-f027c.appspot.com",
-    messagingSenderId: "99748621717"
-  };
-  firebase.initializeApp(config);
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyBDdv2SOg3MshG0h0dMj3eo_bBRninaOdk",
+      authDomain: "t-chat-f027c.firebaseapp.com",
+      databaseURL: "https://t-chat-f027c.firebaseio.com",
+      projectId: "t-chat-f027c",
+      storageBucket: "t-chat-f027c.appspot.com",
+      messagingSenderId: "99748621717"
+    };
+    firebase.initializeApp(config);
   </script>
   <!--APPLICATION SCRIPTS-->
   <script src="/scripts/app.js"></script>
   <script src="/scripts/controllers/HomeCtrl.js"></script>
   <script src="/scripts/services/Room.js"></script>
+  <script src="/scripts/controllers/AddRoomCtrl.js"></script>
 </body>
 </html>

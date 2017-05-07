@@ -4,9 +4,8 @@
 
     this.openModal = function () {
       var modalInstance = $uibModal.open({
-        templateUrl: '/templates/modal.html',
-        controller: 'AddRoomCtrl',
-        controllerAs: 'roomModal'
+        templateUrl: '/templates//modals/addRoom.html',
+        controller: 'AddRoomCtrl as modal',
       });
     };
   }

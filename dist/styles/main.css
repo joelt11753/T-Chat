@@ -47,3 +47,23 @@ html {
 .addRoom input {
   width: 270px;
 }
+.messages .text span {
+  font-weight: 700;
+  font-size: 1rem;
+}
+.messages .header {
+  border-bottom: 1px solid #CCC;
+  margin-bottom: 25px;
+  padding-bottom: 5px;
+}
+.messages h3 {
+  font-weight: 600;
+}
+.messages small {
+  font-size: .8rem;
+  margin-left: 5px;
+}
+.messages p {
+  letter-spacing: .4px;
+  font-size: 1rem;
+}

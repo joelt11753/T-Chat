@@ -1,5 +1,5 @@
 (function ($scope) {
-  function HomeCtrl(Room, Message, $uibModal) {
+  function HomeCtrl(Room, Message, $uibModal, $cookies) {
     this.roomList = Room.all;
 
     this.messages = Message.sort(1);
@@ -8,7 +8,7 @@
     this.openModal = function () {
       var modalInstance = $uibModal.open({
         templateUrl: '/templates//modals/addRoom.html',
-        controller: 'AddRoomCtrl as modal',
+        controller: 'ModalCtrl as modal',
       });
     }; // end open modal
 
@@ -20,5 +20,5 @@
 
   angular
     .module('tChat')
-    .controller('HomeCtrl', ['Room', 'Message', '$uibModal', HomeCtrl]);
+    .controller('HomeCtrl', ['Room', 'Message', '$uibModal', '$cookies', HomeCtrl]);
 })();

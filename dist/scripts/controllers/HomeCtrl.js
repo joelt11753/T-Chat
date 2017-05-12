@@ -15,7 +15,7 @@
     this.currentRoom = function (room) {
       this.activeRoom = room;
       this.messages = Message.sort(this.activeRoom.$id);
-    }; // end currentRoom
+     }; // end currentRoom
   } // end HomeCtrl
 
   angular

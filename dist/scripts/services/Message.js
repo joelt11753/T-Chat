@@ -8,7 +8,7 @@
     Message.all = messages;
 
     Message.sort = function (room) {
-      room = parseInt(room);
+      room = room;
       return $firebaseArray(ref.orderByChild('room').equalTo(room));
     };
 

@@ -1,26 +1,22 @@
-<!--MAIN PAGE-->
+<!--SIDEBAR-->
 
-  <div class="container-fluid">
-    <div class="row">
-      <!--LEFT SIDEBAR-->
-      <div class="col-xs-2 sidebar">
-        <div class="row">
-          <!--TITLE BOX-->
-          <header class="col-xs-12 title">
-            <h3>T-Chat</h3>
-            <div class="newRoom">
-              <button class="btn btn-default btn-sm" ng-click="home.openModal()">Create Room</button>
-            </div>
-          </header>
-          <nav class="col-xs-12">
-            <ul ng-repeat="room in home.roomList">
-              <li ng-click="home.currentRoom(room)">{{ room.$value }}</li>
-            </ul>
-          </nav>
-        </div>
+  <div class="sidebar">
+    <header class="col-xs-12 title">
+      <h3>T-Chat</h3>
+      <div class="newRoom">
+        <button class="btn btn-default btn-sm" ng-click="home.openModal()">Create Room</button>
       </div>
-      <!--CHAT SECTION-->
-      <div class="col-xs-10 messages">
+    </header>
+    <nav class="col-xs-12">
+      <ul ng-repeat="room in home.roomList">
+        <li ng-click="home.currentRoom(room)">{{ room.$value }}</li>
+      </ul>
+    </nav>
+  </div>
+  <!--MESSAGE CONTAINER-->
+  <div class="container-fluid messages">
+    <div class="row padding">
+      <div class="col-xs-12">
         <div class="row">
           <div class="col-xs-12 header">
             <h3 ng-show="home.activeRoom != null">{{ home.activeRoom.$value }}</h3>
@@ -37,10 +33,10 @@
             </div>
           </div>
         </div>
-        <!--SEND MESSAGE-->
-        <div class="input-group sendMsg">
-          <input type="text" class="form-control" placeholder="Type here" ng-keyup="$event.keyCode == 13 ? myFunc() : null">
-        </div>
       </div>
     </div>
+  </div>
+  <!--SEND MESSAGES-->
+  <div class="sendMessages">
+    <input type="text" placeholder="Type here" ng-model="home.newMessage.content" ng-keyup="$event.keyCode == 13 ? home.sendMessage() : null">
   </div>

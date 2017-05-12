@@ -11,6 +11,11 @@
       room = room;
       return $firebaseArray(ref.orderByChild('room').equalTo(room));
     };
+    
+    Message.send = function (message) {
+            message.time = firebase.database.ServerValue.TIMESTAMP;
+      messages.$add(message);
+    };
 
     return Message;
   }

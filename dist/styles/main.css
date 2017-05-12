@@ -81,6 +81,7 @@ html {
   font-size: 1rem;
 }
 .sendMessages {
+  background-color: #FFF;
   position: fixed;
   bottom: 0px;
   left: 250px;

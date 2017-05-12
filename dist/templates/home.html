@@ -28,7 +28,7 @@
                 <span>
                   {{ message.user }}
                 </span>
-                <small>{{ message.time }}</small></h6>
+                <small>{{ message.time | date: "shortTime" }}</small></h6>
               <p>{{ message.content }}</p>
             </div>
           </div>

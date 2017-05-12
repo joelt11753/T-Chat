@@ -2,8 +2,9 @@
   function HomeCtrl(Room, Message, $uibModal, $cookies) {
     this.roomList = Room.all;
 
-    this.messages = Message.sort(1);
+    this.messages = Message.sort("-KjqDidDEcHiU_XYtIDj");
     this.activeRoom = null;
+    this.currentUser = $cookies.get('tChatCurrentUser');
 
     this.openModal = function () {
       var modalInstance = $uibModal.open({
@@ -14,8 +15,19 @@
 
     this.currentRoom = function (room) {
       this.activeRoom = room;
+
       this.messages = Message.sort(this.activeRoom.$id);
-     }; // end currentRoom
+    }; // end currentRoom
+
+    this.sendMessage = function () {
+      if (this.activeRoom === null) {
+        this.newMessage.room = "-KjqDidDEcHiU_XYtIDj";
+      } else {
+        this.newMessage.room = this.activeRoom.$id;
+      }
+      this.newMessage.user = this.currentUser;
+      Message.send(this.newMessage);
+    }; // sendMessage
   } // end HomeCtrl
 
   angular

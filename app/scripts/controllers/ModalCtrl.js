@@ -14,7 +14,7 @@
       $uibModalInstance.close();
     }
     
-  } // ModalCtrl
+  }
 
   angular
     .module('tChat')

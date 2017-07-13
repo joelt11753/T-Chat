@@ -1,42 +1,44 @@
 <!--SIDEBAR-->
 
-  <div class="sidebar">
-    <header class="col-xs-12 title">
-      <h3>T-Chat</h3>
-      <div class="newRoom">
-        <button class="btn btn-default btn-sm" ng-click="home.openModal()">Create Room</button>
-      </div>
-    </header>
-    <nav class="col-xs-12">
-      <ul ng-repeat="room in home.roomList">
-        <li ng-click="home.currentRoom(room)">{{ room.$value }}</li>
-      </ul>
-    </nav>
-  </div>
-  <!--MESSAGE CONTAINER-->
-  <div class="container-fluid messages">
-    <div class="row padding">
-      <div class="col-xs-12">
-        <div class="row">
-          <div class="col-xs-12 header">
-            <h3 ng-show="home.activeRoom != null">{{ home.activeRoom.$value }}</h3>
-            <h3 ng-show="home.activeRoom == null">Welcome</h3>
-          </div>
-          <div class="col-xs-12">
-            <div class="text" ng-repeat="message in home.messages">
-              <h6>
+<div class="sidebar">
+  <header class="col-xs-12 title">
+    <h3>T-Chat</h3>
+    <div class="newRoom">
+      <button class="btn btn-default btn-sm" ng-click="home.openModal()">Create Room</button>
+    </div>
+  </header>
+  <nav class="col-xs-12">
+    <ul ng-repeat="room in home.roomList">
+      <li ng-click="home.currentRoom(room)">{{ room.$value }}</li>
+    </ul>
+  </nav>
+</div>
+<!--MESSAGE CONTAINER-->
+<div class="container-fluid messages">
+  <div class="row padding">
+    <div class="col-xs-12">
+      <div class="row">
+        <div class="col-xs-12 header">
+          <h3 ng-show="home.activeRoom != null">{{ home.activeRoom.$value }}</h3>
+          <h3 ng-show="home.activeRoom == null">Welcome</h3>
+        </div>
+        <div class="col-xs-12">
+          <div class="text" ng-repeat="message in home.messages">
+            <h6>
                 <span>
                   {{ message.user }}
                 </span>
-                <small>{{ message.time | date: "shortTime" }}</small></h6>
-              <p>{{ message.content }}</p>
-            </div>
+              <small>{{ message.time | date: "shortTime" }}</small>
+            </h6>
+            <p>{{ message.content }}</p>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <!--SEND MESSAGES-->
-  <div class="sendMessages">
-    <input type="text" placeholder="Type here" ng-model="home.newMessage.content" ng-keyup="$event.keyCode == 13 ? home.sendMessage() : null">
-  </div>
+</div>
+<!--SEND MESSAGES-->
+<div class="sendMessages">
+  <input type="text" placeholder="Type here" ng-model="home.newMessage.content"
+         ng-keyup="$event.keyCode == 13 ? home.sendMessage() : null">
+</div>

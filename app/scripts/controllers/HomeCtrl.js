@@ -11,13 +11,13 @@
         templateUrl: '/templates//modals/addRoom.html',
         controller: 'ModalCtrl as modal',
       });
-    }; // end open modal
+    };
 
     this.currentRoom = function (room) {
       this.activeRoom = room;
 
       this.messages = Message.sort(this.activeRoom.$id);
-    }; // end currentRoom
+    };
 
     this.sendMessage = function () {
       if (this.activeRoom === null) {
@@ -27,8 +27,9 @@
       }
       this.newMessage.user = this.currentUser;
       Message.send(this.newMessage);
-    }; // sendMessage
-  } // end HomeCtrl
+
+    };
+  }
 
   angular
     .module('tChat')

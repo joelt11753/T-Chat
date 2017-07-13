@@ -11,7 +11,7 @@
         backdrop: 'static'
       });
     }
-  } // end tChatCookies
+  }
 
   angular
     .module('tChat')

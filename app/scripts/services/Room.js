@@ -12,7 +12,7 @@
     };
 
     return Room;
-  } // end Room
+  }
 
   angular
     .module('tChat')

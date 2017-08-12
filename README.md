@@ -1,10 +1,10 @@
 # T-Chat
 
-This is a web-based chat-room app similar to Slack.  This project is still in the developmental stages.  
+T-Chat is a web-based chat room.  Check it out and chat with your friends.  
 
-## Getting Started
+## Getting Started - Running Locally
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
 ### Prerequisites
 
@@ -14,15 +14,15 @@ The following are needed to run this project
 * NPM
 * Grunt
 
-Once installed, use the commandline to navigate to the project location. Use this command to install all dependencies
+Once installed, use the terminal to navigate to the project location. Use this command to install all dependencies
 
 ```
 npm install
 ```
 
-### Deployment
+### Serve
 
-In the commandline navigate to the project and run
+To serve the app in the browser run
 
 ```
 grunt
@@ -38,30 +38,10 @@ localhost:3000
 
 HTML5 / CSS3 / JavaScript / Angular.JS / Firebase / Node.JS / NPM / Grunt
 
-### Grunt plugins
-
-A list of the Grunt plugins in this application:
-
-#### Watch
-
-[Grunt watch](https://github.com/gruntjs/grunt-contrib-watch) watches for changes to file content and then executes Grunt tasks when a change is detected.
-
-#### Copy
-
-[Grunt copy](https://github.com/gruntjs/grunt-contrib-copy) copies files from our development folders and puts them in the folder that will be served with the frontend of your application.
-
-#### Clean
-
-[Grunt clean](https://github.com/gruntjs/grunt-contrib-clean) "cleans" or removes all files in your distribution folder (`dist`) so that logic in your stylesheets, templates, or scripts isn't accidentally overridden by previous code in the directory.
-
-#### Hapi
-
-[Grunt Hapi](https://github.com/athieriot/grunt-hapi) runs a server using [`HapiJS`](http://hapijs.com/). Happy is a Node web application framework with robust configuration options.
-
 ### Version
 
 0.0.1
 
 ### Author
 
-Joel Tennant
+[Joel Tennant](http://www.github.com/joelt11753)

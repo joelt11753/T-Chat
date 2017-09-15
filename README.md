@@ -1,55 +1,28 @@
-# T-Chat
+# Tchat
 
-T-Chat is a web-based chat room for friends to talk tech. The app was built with purely front-end technology. Firebase provided the back-end with a no-sql database. Using AngularJS the app works in real time communicating with Firebase to listening devices.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.2.7.
 
-## Problem
+## Development server
 
-When creating this application the chief issue was to build this project using only JavaScript. Frameworks can be used but no back-end languages could be used in the application itself.
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Solution
+## Code scaffolding
 
-The solution to this issue was Firebase. Firebase serves as a back-end system with a no-sql database. This allows a developer to quickly set-up web or mobile applications without worrying about large infrastructure. Using AngularJS my application communicates with Firebase in real-time to allow users to chat with each other.
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Getting Started - Running Locally
+## Build
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
 
-### Prerequisites
+## Running unit tests
 
-The following are needed to run this project
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-* Node.JS
-* NPM
-* Grunt
+## Running end-to-end tests
 
-Once installed, use the terminal to navigate to the project location. Use this command to install all dependencies
+Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+Before running the tests make sure you are serving the app via `ng serve`.
 
-```
-npm install
-```
+## Further help
 
-### Serve
-
-To serve the app in the browser run
-
-```
-grunt
-```
-
-Once the server is running, use your browser to go to
-
-```
-localhost:3000
-```
-
-### Built With
-
-HTML5 / CSS3 / JavaScript / Angular.JS / Firebase / Node.JS / NPM / Grunt
-
-### Version
-
-0.0.1
-
-### Author
-
-[Joel Tennant](http://www.github.com/joelt11753)
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).

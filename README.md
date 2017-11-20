@@ -41,11 +41,3 @@ localhost:3000
 ### Built With
 
 HTML5 / CSS3 / JavaScript / Angular.JS / Firebase / Node.JS / NPM / Grunt
-
-### Version
-
-0.0.1
-
-### Author
-
-[Joel Tennant](http://www.github.com/joelt11753)
